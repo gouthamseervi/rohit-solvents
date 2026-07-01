@@ -1,0 +1,23 @@
+{
+  "summary": "First-iteration frontend smoke test for Rohit Solvents marketing site. Verified home hero + stats, navbar (desktop + mobile hamburger), floating WhatsApp button href, industries bento cards + navigation, featured solvents (6 cards), Products page (16 products, search filter, category filter, empty state for 'zzzzz', product Enquire link with correct wa.me + product name), Contact page (WhatsApp/Phone cards, tel: and mailto: links, embedded map iframe), About page direct URL, and SPA routing. No console errors observed.",
+  "tested_scope": ["frontend", "integration"],
+  "passed": [
+    "Home hero H1, catalogue + WhatsApp CTAs, and all 4 stat counters (20+/40+/05/250+) render",
+    "Sticky navbar shows all 5 nav links + Enquire CTA pointing to wa.me/919845012345",
+    "Mobile viewport (375x812): hamburger toggle opens mobile menu with all 5 links + WhatsApp CTA",
+    "Floating WhatsApp button (data-testid=floating-whatsapp-btn) href contains wa.me/919845012345",
+    "Home industries bento: 5 cards (paints, inks, pharma, printing, cleaning); clicking card navigates to /industries",
+    "Home Featured solvents section renders exactly 6 product cards",
+    "Products page shows 16 products with 'All' filter; Aromatics filter narrows to 2; search filters correctly",
+    "Empty state (products-empty-state) appears for search 'zzzzz'",
+    "Product Enquire link (product-enquire-108-88-3) contains wa.me/919845012345 with 'Toluene' prefilled in text",
+    "Contact page: WhatsApp card, Phone card (tel: href), Email card (mailto: href), and embedded Google Map iframe present",
+    "SPA routing works via direct URL to /products, /industries, /contact, /about",
+    "No console errors on any page navigation"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "N/A (skipped per request)", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
