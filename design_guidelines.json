@@ -1,0 +1,106 @@
+{
+  "project_name": "Rohit Solvents",
+  "app_type": "marketing_site",
+  "theme": "light",
+  "archetype": "4 (Swiss & High-Contrast with Earthy Warmth)",
+  "design_vision": "An 'Editorial Science' aesthetic that moves away from generic corporate blue. It uses high-contrast typography, strict Swiss-style grids, and warm off-white backgrounds paired with a strong Rust Orange accent to evoke industrial energy, precision, and authority. The design should feel premium, serious, and deeply trustworthy.",
+  "typography": {
+    "headings": {
+      "family": "Outfit, sans-serif",
+      "weights": ["400", "700", "900"],
+      "styling": "tracking-tighter, leading-none, high contrast"
+    },
+    "body": {
+      "family": "'IBM Plex Sans', sans-serif",
+      "weights": ["400", "500", "600"],
+      "styling": "leading-relaxed, left-aligned for density"
+    },
+    "mono": {
+      "family": "'JetBrains Mono', monospace",
+      "weights": ["400"],
+      "styling": "uppercase, tracking-[0.2em] for labels, CAS numbers, and overlines"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter text-charcoal",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-charcoal",
+      "h3": "text-xl sm:text-2xl font-semibold text-charcoal",
+      "body": "text-base text-charcoal/80",
+      "small_label": "text-xs font-mono tracking-widest uppercase text-charcoal/60"
+    }
+  },
+  "color_palette": {
+    "background": "#F9F9F8",
+    "surface": "#EFEFEA",
+    "surface_alt": "#E4E4DF",
+    "primary": "#1A1A1A",
+    "primary_foreground": "#FFFFFF",
+    "accent": "#E85D04",
+    "accent_foreground": "#FFFFFF",
+    "secondary_accent": "#2D6A4F",
+    "border": "#D5D5D0",
+    "text": {
+      "main": "#1A1A1A",
+      "muted": "#1A1A1A99",
+      "inverse": "#F9F9F8"
+    }
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Generous. Use p-6 to p-12 for internal card padding, py-24 to py-32 for section padding.",
+    "grid_system": {
+      "mode": "Bento / Grid Borders",
+      "industries_section": "grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6",
+      "products_section": "grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "borders_and_radius": {
+      "radius": "rounded-none or rounded-sm (max 4px) for a sharp, technical industrial feel.",
+      "borders": "1px solid border-border. Use 'Grid Borders' style for data-heavy sections to expose the skeleton."
+    }
+  },
+  "components": {
+    "buttons": "Square edges, high contrast. Primary: bg-[#1A1A1A] hover:bg-[#E85D04] text-white transition-colors duration-300. Include data-testid.",
+    "cards": "Flat background (bg-surface), 1px subtle border, no shadow by default. Hover: slight lift (-translate-y-1) and subtle shadow.",
+    "navigation": "Sticky glassmorphism header (backdrop-blur-xl bg-[#F9F9F8]/80) with 1px bottom border.",
+    "footer": "Massive spacing (py-24). High contrast (Dark charcoal background, off-white text).",
+    "badges": "Used for CAS numbers and Purity tags. Font-mono, small, muted background."
+  },
+  "interactive_and_motion": {
+    "hover": "Explicit hover states on all interactives. Color shifts towards Accent (#E85D04) for engagement.",
+    "transitions": "transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease",
+    "data_testid": "MANDATORY on all buttons, links, product cards, and form inputs (e.g., data-testid='whatsapp-cta-button', data-testid='product-card-toluene')."
+  },
+  "media": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1634166802891-02961f17139c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpcXVpZCUyMG1hY3JvfGVufDB8fHx8MTc4Mjg3MjUxOHww&ixlib=rb-4.1.0&q=85",
+      "description": "Abstract macro liquid with orange/brown industrial tones. Use with a gradient overlay (bg-gradient-to-r from-[#F9F9F8]/90 to-[#F9F9F8]/40) so text is highly legible."
+    },
+    "industry_pharmaceutical": {
+      "url": "https://images.pexels.com/photos/15831822/pexels-photo-15831822.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Scientist performing meticulous experiment."
+    },
+    "industry_manufacturing": {
+      "url": "https://images.unsplash.com/photo-1764114441123-586d13fc6ece?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwbWFudWZhY3R1cmluZyUyMGZhY2lsaXR5fGVufDB8fHx8MTc4Mjg3MjUxOHww&ixlib=rb-4.1.0&q=85",
+      "description": "Industrial workshop with lathe and metal shavings."
+    },
+    "industry_printing": {
+      "url": "https://images.pexels.com/photos/1440504/pexels-photo-1440504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Detailed view of an industrial printing press."
+    },
+    "about_facility": {
+      "url": "https://images.pexels.com/photos/34718922/pexels-photo-34718922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Vast industrial factory floor with machinery."
+    }
+  },
+  "content_structure": {
+    "hero": "H1: 'Precision Solvents for Modern Industry'. Subtitle: High-purity chemical solutions for paints, pharma, and beyond. CTA: 'View Product Catalog' and 'Contact via WhatsApp'.",
+    "industries_bento": "Showcase Paints & Coatings, Pharmaceuticals, Printing & Inks, Cleaning. Use strict grid, large numbers (01, 02) in mono font.",
+    "product_catalog": "Grid of realistic chemical cards. E.g., 'Toluene (CAS: 108-88-3) - Aromatic', 'Isopropyl Alcohol (CAS: 67-63-0) - Alcohols'. Fields: Name, CAS, Purity (e.g. 99.5%), Applications.",
+    "about_and_stats": "Text-heavy editorial layout detailing quality commitment. Counters: Years in Business, Products, Industries Served.",
+    "contact_and_footer": "Direct WhatsApp integration (no form). Map placeholder. Business Address: Sukadkatte, Bangalore 560091."
+  },
+  "technical_instructions": {
+    "icons": "lucide-react for sharp, consistent UI icons.",
+    "animations": "Framer Motion for scroll-triggered entrance animations (staggered lists, fade up).",
+    "routing": "Use React Router for Home, About, Products, Industries, Contact pages.",
+    "testing": "All critical interactive elements MUST have semantic data-testid attributes."
+  }
+}
