@@ -13,7 +13,6 @@ export default function Contact() {
           <div className="overline">Talk to us</div>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-8xl font-black tracking-tighter leading-[0.95]">
             One call. One WhatsApp.<br />
-            <span className="text-underline-accent">Straight to a chemist.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-relaxed text-[#1A1A1A]/75">
             No forms. No ticket queues. Reach a real person on our sales desk
