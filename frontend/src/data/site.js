@@ -1,9 +1,9 @@
 export const COMPANY = {
   name: 'Rohit Solvents',
   tagline: 'Precision Solvents. Industrial Trust.',
-  phone: '+91 98450 12345',
-  phoneRaw: '919845012345',
-  email: 'contact@rohitsolvents.in',
+  phone: '+91 80507 42946',
+  phoneRaw: '918050742946',
+  email: 'rohitsolvent@gmail.com',
   address: 'Sukadkatte, Bangalore 560091',
   yearsInBusiness: 20,
   productsCount: 40,
@@ -23,8 +23,7 @@ export const INDUSTRIES = [
     blurb:
       'High-purity aromatics, esters, and glycol ethers formulated to deliver flow, gloss and durability across decorative and industrial coatings.',
     products: ['Xylene', 'Toluene', 'Butyl Acetate', 'MIBK'],
-    image:
-      'https://images.unsplash.com/photo-1764114441123-586d13fc6ece?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHw0fHxpbmR1c3RyaWFsJTIwbWFudWZhY3R1cmluZyUyMGZhY2lsaXR5fGVufDB8fHx8MTc4Mjg3MjUxOHww&ixlib=rb-4.1.0&q=85',
+    image: '/images/paints-and-coatings-4000x6000.png',
   },
   {
     id: 'inks',
@@ -53,8 +52,7 @@ export const INDUSTRIES = [
     blurb:
       'Solvent blends optimized for press-ready viscosity, quick drying and press-side compatibility across substrates.',
     products: ['Ethyl Acetate', 'n-Propyl Acetate', 'Ethanol'],
-    image:
-      'https://images.unsplash.com/photo-1634166802891-02961f17139c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpcXVpZCUyMG1hY3JvfGVufDB8fHx8MTc4Mjg3MjUxOHww&ixlib=rb-4.1.0&q=85',
+    image: '/images/printing-and-packaging-4000x6000.png',
   },
   {
     id: 'cleaning',
@@ -108,15 +106,6 @@ export const PRODUCTS = [
     formula: 'C₆H₁₄',
   },
   {
-    name: 'n-Heptane',
-    cas: '142-82-5',
-    purity: '99.0%',
-    category: 'Aliphatics',
-    apps: ['Reference fuel', 'Pharma'],
-    packaging: '170 kg drums',
-    formula: 'C₇H₁₆',
-  },
-  {
     name: 'Isopropyl Alcohol (IPA)',
     cas: '67-63-0',
     purity: '99.9%',
@@ -124,24 +113,6 @@ export const PRODUCTS = [
     apps: ['Pharma', 'Cleaning', 'Electronics'],
     packaging: '160 kg drums · 25 L carboys',
     formula: 'C₃H₈O',
-  },
-  {
-    name: 'Methanol',
-    cas: '67-56-1',
-    purity: '99.95%',
-    category: 'Alcohols',
-    apps: ['API synthesis', 'Fuel', 'Formaldehyde'],
-    packaging: '200 kg drums · Bulk',
-    formula: 'CH₃OH',
-  },
-  {
-    name: 'Ethanol (Absolute)',
-    cas: '64-17-5',
-    purity: '99.9%',
-    category: 'Alcohols',
-    apps: ['Pharma', 'Cosmetics', 'Inks'],
-    packaging: '160 kg drums',
-    formula: 'C₂H₆O',
   },
   {
     name: 'n-Butanol',
@@ -224,18 +195,24 @@ export const PRODUCTS = [
     packaging: '300 kg drums',
     formula: 'C₂Cl₄',
   },
+  {
+    name: 'Cyclohexane',
+    cas: '110-82-7',
+    purity: '99.5%',
+    category: 'Aliphatics',
+    apps: ['Solvent for resins', 'Chemical synthesis'],
+    packaging: '200 kg drums',
+    formula: 'C₆H₁₂',
+  }
 ];
 
 export const CERTIFICATIONS = [
   { code: 'ISO 9001', label: 'Quality Management' },
-  { code: 'ISO 14001', label: 'Environmental' },
-  { code: 'ISO 45001', label: 'Occupational Safety' },
-  { code: 'GMP-Ready', label: 'Pharma Grade' },
   { code: 'MSDS', label: 'Full Documentation' },
 ];
 
 export const STATS = [
-  { value: '20+', label: 'Years in industry' },
+  { value: '32+', label: 'Years in industry' },
   { value: '40+', label: 'Solvent grades' },
   { value: '05', label: 'Industries served' },
   { value: '250+', label: 'Enterprise clients' },
