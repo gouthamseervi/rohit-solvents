@@ -6,7 +6,6 @@ import {
   STATS,
   PRODUCTS,
   CERTIFICATIONS,
-  TESTIMONIALS,
   WHATSAPP_URL,
 } from '../data/site';
 
@@ -28,10 +27,10 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10 pt-20 lg:pt-28 pb-24 lg:pb-32">
-          <div className="flex items-center gap-4 mb-10">
+          {/* <div className="flex items-center gap-4 mb-10">
             <span className="h-px w-16 bg-[#1A1A1A]" />
             <span className="overline">Precision Solvents · Est. 2005</span>
-          </div>
+          </div> */}
 
           <h1 className="font-display text-5xl sm:text-6xl lg:text-[92px] font-black tracking-tighter leading-[0.95] text-[#1A1A1A] max-w-5xl fade-up">
             High-purity solvents<br />
@@ -41,7 +40,7 @@ export default function Home() {
 
           <p className="mt-10 max-w-xl text-base lg:text-lg text-[#1A1A1A]/75 leading-relaxed fade-up">
             Rohit Solvents supplies laboratory- and industrial-grade chemical
-            solvents to paints, inks, pharmaceuticals, printing and cleaning
+            solvents to paints, inks, pharmaceuticals, printing, home care and personal care
             manufacturers across South India.
           </p>
 
@@ -87,7 +86,7 @@ export default function Home() {
         <div className="marquee whitespace-nowrap">
           {[...Array(2)].map((_, i) => (
             <div key={i} className="flex gap-16 pr-16 shrink-0">
-              {['Toluene', 'Isopropyl Alcohol', 'MEK', 'Xylene', 'Acetone', 'Ethyl Acetate', 'MDC', 'Methanol', 'MIBK', 'n-Hexane', 'Butyl Acetate', 'Perchloroethylene'].map((n) => (
+              {['Toluene', 'Isopropyl Alcohol', 'MEK', 'Xylene', 'Acetone', 'Ethyl Acetate', 'MDC', 'MIBK', 'n-Hexane', 'Butyl Acetate', 'Perchloroethylene'].map((n) => (
                 <span key={n + i} className="font-display text-3xl font-black tracking-tighter">
                   {n} <span className="text-[#E85D04]">·</span>
                 </span>
@@ -110,8 +109,7 @@ export default function Home() {
             {[
               { icon: Beaker, title: 'Verified Purity', body: 'Every batch is tested and shipped with a Certificate of Analysis (CoA), Safety Data Sheet (MSDS) and traceability documentation.' },
               { icon: Truck, title: 'Reliable Logistics', body: 'From 25L carboys to bulk tankers — dispatch across Karnataka and pan-India through vetted hazardous-goods carriers.' },
-              { icon: ShieldCheck, title: 'Safety First', body: 'Storage and handling audited to ISO 45001 standards. Trained staff. Compliant transport. No shortcuts on safety.' },
-              { icon: FlaskConical, title: 'Technical Support', body: 'Our chemists help you spec the right grade, blend or substitute — reducing waste and reformulation cycles.' },
+              { icon: ShieldCheck, title: 'Safety First', body: 'Storage and handling according to safety standards. Trained staff. Compliant transport. No shortcuts on safety.' },
             ].map(({ icon: Icon, title, body }) => (
               <div
                 key={title}
@@ -265,7 +263,7 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="max-w-[1400px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
+      {/* <section className="max-w-[1400px] mx-auto px-6 lg:px-10 py-24 lg:py-32">
         <div className="overline">§ 04 — Trusted by</div>
         <h2 className="mt-6 font-display text-4xl lg:text-6xl font-black tracking-tighter leading-[1.02] max-w-3xl">
           Two decades of<br /> keeping production lines running.
@@ -288,7 +286,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section className="bg-[#1A1A1A] text-[#F9F9F8]">
