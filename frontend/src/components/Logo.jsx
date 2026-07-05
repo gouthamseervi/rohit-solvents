@@ -41,7 +41,7 @@ export default function Logo({ inverse = false }) {
           className="font-mono text-[9px] tracking-[0.22em] mt-1"
           style={{ color: muted }}
         >
-          EST. 2005 · BANGALORE
+          EST. 1993 · BANGALORE
         </span>
       </div>
     </Link>
