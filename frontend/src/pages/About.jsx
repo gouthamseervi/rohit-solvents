@@ -36,7 +36,7 @@ export default function About() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-10 pt-20 pb-16 lg:pt-28 lg:pb-24">
           <div className="overline">About Rohit Solvents</div>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl lg:text-8xl font-black tracking-tighter leading-[0.95] max-w-5xl">
-            Two decades of moving<br />
+            Three decades of moving<br />
             the <span className="text-underline-accent">right chemistry</span><br />
             to the right place.
           </h1>
@@ -48,14 +48,14 @@ export default function About() {
         <div className="lg:col-span-5">
           <div className="overline">§ Our story</div>
           <h2 className="mt-6 font-display text-3xl lg:text-5xl font-black tracking-tighter leading-tight">
-            From a two-tank<br />warehouse in Sukadkatte<br />to a trusted South-India<br />solvent supplier.
+            From a two-tank<br />warehouse in Bangalore<br />to a trusted South-India<br />solvent supplier.
           </h2>
         </div>
         <div className="lg:col-span-7 space-y-6 text-lg leading-relaxed text-[#1A1A1A]/85">
           <p>
-            Rohit Solvents began in 2005 with a simple thesis — the paints and pharma
+            Rohit Solvents began in 1993 with a simple thesis — the paints and pharma
             manufacturers of Karnataka deserved a solvent supplier who understood
-            their formulations as well as their timelines. Two decades on, that thesis
+            their formulations as well as their timelines. Three decades on, that thesis
             has scaled into a full-industry distribution business, but the discipline
             has not changed.
           </p>
