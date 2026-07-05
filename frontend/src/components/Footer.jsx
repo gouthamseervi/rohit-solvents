@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, ArrowUpRight } from 'lucide-react';
 import Logo from './Logo';
 import { COMPANY, INDUSTRIES, WHATSAPP_URL } from '../data/site';
+import { color } from 'framer-motion';
 
 export default function Footer() {
   return (
@@ -29,7 +30,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <p className="overline text-[#F9F9F8]/60">Navigate</p>
+            <p className="overline text-[#F9F9F8]/60" style={{ color: "#FFFFFF"}}>Navigate</p>
             <ul className="mt-6 space-y-3 text-sm">
               <li><Link className="hover:text-[#E85D04]" to="/">Home</Link></li>
               <li><Link className="hover:text-[#E85D04]" to="/products">Products</Link></li>
@@ -40,7 +41,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-2">
-            <p className="overline text-[#F9F9F8]/60">Industries</p>
+            <p className="overline text-[#F9F9F8]/60" style={{ color: "#FFFFFF"}}>Industries</p>
             <ul className="mt-6 space-y-3 text-sm">
               {INDUSTRIES.map((i) => (
                 <li key={i.id}>
@@ -53,7 +54,7 @@ export default function Footer() {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="overline text-[#F9F9F8]/60">Reach us</p>
+            <p className="overline text-[#F9F9F8]/60" style={{ color: "#FFFFFF"}}>Reach us</p>
             <ul className="mt-6 space-y-4 text-sm">
               <li className="flex gap-3">
                 <MapPin size={16} className="mt-1 text-[#E85D04] shrink-0" />
